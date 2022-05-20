@@ -22,16 +22,14 @@ export default function App() {
   return (
     <div className="App">
       <button onClick={onCilckFetchData}>データ取得</button>
-      {todos.map((todo) => {
-        return (
-          <Todo
-            key={todo.id}
-            title={todo.title}
-            userId={todo.userId}
-            completed={todo.completed}
-          />
-        );
-      })}
+      {todos.map((todo) => (
+        <Todo
+          key={todo.id}
+          title={todo.title}
+          userId={todo.userId}
+          completed={todo.completed}
+        />
+      ))}
     </div>
   );
 }
